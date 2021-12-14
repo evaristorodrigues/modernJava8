@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.evaristo;
+package br.com.evaristo.streams;
 
 import java.util.List;
 import java.util.Map;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.evaristo;
+package br.com.evaristo.constructorreference;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
