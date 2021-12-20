@@ -21,8 +21,10 @@ public class StreamFlatMapExample {
 	
 	public static List<String> printStudentActivities(){
 		List<String> studentActivities= StudentDataBase.getAllStudents().stream()
-				                        .map(Student::getActivities)         
-				                        .flatMap(List::stream)
+				                        .map(Student::getActivities)    // Stateless     
+				                        .flatMap(List::stream)  // Stateless 
+				                        .distinct() //Stateful
+				                        .sorted() //Stateful
 				                        .collect(Collectors.toList());
 		
 		return studentActivities;
