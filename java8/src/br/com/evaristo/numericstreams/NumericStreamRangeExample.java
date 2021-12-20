@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.evaristo.streams;
+package br.com.evaristo.numericstreams;
 
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
