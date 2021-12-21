@@ -29,7 +29,7 @@ public class ParallelStreamBoxedExample {
 	public static int parallelSum(List<Integer> integerList) {
 		long startTime = System.currentTimeMillis();
 		int sum = integerList.parallelStream()
-				  .reduce(0, (x,y) -> x+y);
+				  .reduce(0, (x,y) -> x+y); // Perform the unboxing from Integer to int
 		long endTime = System.currentTimeMillis();
 		System.out.println("Duration in Parallel sum = "+(endTime - startTime));
 		return sum;
