@@ -10,7 +10,8 @@ public class Student {
     private double gpa;
     private String gender;
     private int noteBooks;
-    private Optional<Bike> bike;
+    List<String> activities = new ArrayList<>();
+    private Optional<Bike> bike = Optional.empty();
     
 
     public Optional<Bike> getBike() {
@@ -86,9 +87,7 @@ public class Student {
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
-
-    List<String> activities = new ArrayList<>();
-
+    
     public  List<String> getActivities() {
         return this.activities;
     }
