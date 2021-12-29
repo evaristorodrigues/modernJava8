@@ -81,6 +81,7 @@ public class LocalDateExample {
       System.out.println("\nAdditional Support methods ");
       System.out.println("Is LeapYear = "+ LocalDate.ofYearDay(2021,01).isLeapYear());      
       System.out.println("IsEquals = "+localDate + " = "+localDate1+" "+ localDate.isEqual(localDate1));
+      System.out.println("Equals = "+localDate + " = "+localDate1+" "+ localDate.equals(localDate1));
       System.out.println("IsBefore = "+localDate + " = "+localDate1+" "+ localDate.isBefore(localDate1));
       System.out.println("IsAfter = "+localDate + " = "+localDate1+" "+ localDate.isAfter(localDate1));
       System.out.println("IsSupported = "+localDate.isSupported(ChronoField.ALIGNED_WEEK_OF_MONTH));
